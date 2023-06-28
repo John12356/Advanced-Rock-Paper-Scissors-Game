@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body class="Body">
+  <div class="container">
+    <header class="top">
+      <img src="images/logo.svg" class="logo" alt="logo">
+      <div class="score">
+        <div class="score-name">score</div>
+        <div class="score-num">0</div>
+      </div>
+    </header>
+    <section class="board">
+      <button class="choice-btn" data-choice="paper">
+        <div class="choice paper">
+          <img src="images/icon-paper.svg" alt="">
+        </div>
+      </button>
+      <button class="choice-btn" data-choice="scissors">
+        <div class="choice scissors">
+          <img src="images/icon-scissors.svg" alt="">
+        </div>
+      </button>
+      <button class="choice-btn" data-choice="rock">
+        <div class="choice rock">
+          <img src="images/icon-rock.svg" alt="">
+        </div>
+      </button>
+    </section>
+  </div>
+
+  <section class="final hidden">
+    <h2 class="result">you picked</h2>
+    <h1></h1>
+    <h2 class="result">the house picked</h2>
+    <div class="results"></div>
+    <div>
+      <div class="win-status hidden">
+        <h3 class="status"></h3>
+        <button class="play-again">play again</button>
+      </div>
+    </div>
+    <div class="results"></div>
+  </section>
+
+  <button class="rules-btn">rules</button>
+  <div class="rules-page">
+    <div class="rules-container">
+      <header class="rules-header">
+        <h2 class="rules-name">rules</h2>
+        <button class="rules-close">
+          <img src="images/icon-close.svg" alt="">
+        </button>
+      </header>
+      <img src="images/image-rules.svg" class="rules-img" alt="">
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
